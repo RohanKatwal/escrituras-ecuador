@@ -29,6 +29,9 @@ export function SiteHeader() {
           <a href="#respaldo" className="transition-colors hover:text-accent">
             Respaldo
           </a>
+          <a href="#preguntas-frecuentes" className="transition-colors hover:text-accent">
+            Preguntas
+          </a>
           <a href="#contacto" className="transition-colors hover:text-accent">
             Contacto
           </a>
