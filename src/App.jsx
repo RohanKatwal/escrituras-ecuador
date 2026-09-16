@@ -16,7 +16,7 @@ const services = [
   {
     icon: Scale,
     title: "Prescripción adquisitiva de dominio",
-    text: "Apoyo técnico en procesos de regularización de propiedades mediante prescripción, de acuerdo con la situación particular del predio.",
+    text: "Apoyo técnico y legal en procesos de regularización de propiedades mediante prescripción, de acuerdo con la situación particular del predio.",
   },
   {
     icon: Building2,
@@ -49,18 +49,23 @@ export default function App() {
             <div className="lg:col-span-7">
               <p className="eyebrow">Escrituras · Ecuador</p>
               <h1 className="mt-5 text-4xl font-extrabold uppercase leading-[1.02] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-                Legalización de <span className="text-accent">terrenos</span> y propiedades
+                Legalización de <span className="text-accent">terrenos</span> y
+                propiedades
               </h1>
               <p className="mt-6 text-xl font-semibold text-foreground sm:text-2xl">
                 Tu terreno merece estar legalizado.
               </p>
               <p className="mt-3 max-w-[52ch] text-base leading-relaxed text-muted-foreground">
-                Te ayudamos a encontrar la vía adecuada para regularizar y legalizar tu propiedad.
+                Te ayudamos a encontrar la vía adecuada para regularizar y
+                legalizar tu propiedad.
               </p>
 
               <ul className="mt-8 max-w-[52ch] space-y-3">
                 {questions.map((q) => (
-                  <li key={q} className="flex items-start gap-3 text-[15px] text-foreground/85">
+                  <li
+                    key={q}
+                    className="flex items-start gap-3 text-[15px] text-foreground/85"
+                  >
                     <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-accent-soft text-accent">
                       <Check className="size-3" aria-hidden="true" />
                     </span>
@@ -69,7 +74,9 @@ export default function App() {
                 ))}
               </ul>
 
-              <p className="mt-6 text-lg font-semibold text-accent">Estamos para ayudarte.</p>
+              <p className="mt-6 text-lg font-semibold text-accent">
+                Estamos para ayudarte.
+              </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
                 <a
@@ -81,7 +88,10 @@ export default function App() {
                   <MessageCircle className="size-5" aria-hidden="true" />
                   Agenda tu asesoría
                 </a>
-                <a href={PHONE_TEL} className="group inline-flex flex-col leading-tight">
+                <a
+                  href={PHONE_TEL}
+                  className="group inline-flex flex-col leading-tight"
+                >
                   <span className="text-2xl font-extrabold text-foreground transition-colors group-hover:text-accent">
                     {PHONE_DISPLAY}
                   </span>
@@ -118,11 +128,8 @@ export default function App() {
                 Cada propiedad tiene una situación diferente.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Analizamos tu caso y te orientamos sobre las alternativas disponibles para lograr la
-                regularización de tu terreno.
-              </p>
-              <p className="mt-6 border-l-2 border-accent pl-4 text-base font-semibold text-foreground">
-                Podemos ayudarte en procesos relacionados con:
+                Analizamos tu caso y te orientamos sobre las alternativas
+                disponibles para lograr la regularización de tu terreno.
               </p>
             </div>
           </div>
@@ -131,6 +138,9 @@ export default function App() {
         {/* SERVICIOS */}
         <section id="servicios" className="border-b border-border">
           <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
+            <h1 className="mt-6 mb-8 text-4xl font-semibold text-foreground text-center">
+              Podemos ayudarte en procesos relacionados con
+            </h1>
             <div className="grid gap-5 sm:grid-cols-2">
               {services.map(({ icon: Icon, title, text }) => (
                 <article
@@ -143,7 +153,9 @@ export default function App() {
                   <h3 className="mt-5 text-xl font-bold uppercase tracking-tight text-foreground">
                     {title}
                   </h3>
-                  <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">{text}</p>
+                  <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">
+                    {text}
+                  </p>
                 </article>
               ))}
             </div>
@@ -159,21 +171,24 @@ export default function App() {
                 Todo el respaldo que necesitas para tu proceso.
               </h2>
               <p className="mt-5 max-w-[54ch] text-base leading-relaxed text-muted-foreground">
-                Cuentas con apoyo técnico y profesionales legales en nuestra oficina durante todo el
-                proceso.
+                Cuentas con apoyo técnico y profesionales legales en nuestra
+                oficina durante todo el proceso.
               </p>
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                {["Soporte técnico", "Abogados en oficina", "Documentación", "Acompañamiento"].map(
-                  (item) => (
-                    <p
-                      key={item}
-                      className="flex items-center gap-3 rounded-xl border border-border bg-surface-strong px-4 py-3 text-sm font-semibold text-foreground"
-                    >
-                      <Check className="size-4 text-accent" aria-hidden="true" />
-                      {item}
-                    </p>
-                  ),
-                )}
+                {[
+                  "Soporte técnico",
+                  "Abogados en oficina",
+                  "Documentación",
+                  "Acompañamiento",
+                ].map((item) => (
+                  <p
+                    key={item}
+                    className="flex items-center gap-3 rounded-xl border border-border bg-surface-strong px-4 py-3 text-sm font-semibold text-foreground"
+                  >
+                    <Check className="size-4 text-accent" aria-hidden="true" />
+                    {item}
+                  </p>
+                ))}
               </div>
             </div>
             <div className="lg:col-span-5">
@@ -196,8 +211,8 @@ export default function App() {
               Hablemos de tu terreno.
             </h2>
             <p className="mx-auto mt-5 max-w-[48ch] text-base leading-relaxed text-accent-foreground/80">
-              Legalización profesional, orientación personalizada y evaluación de tu caso. Agenda tu
-              asesoría sin compromiso.
+              Legalización profesional, orientación personalizada y evaluación
+              de tu caso. Agenda tu asesoría sin compromiso.
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
