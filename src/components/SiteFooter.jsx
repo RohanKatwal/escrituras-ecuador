@@ -42,6 +42,7 @@ export function SiteFooter() {
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             MIDUVI · Prescripción adquisitiva de dominio · Subsecretaría · Mediciones
           </p>
+          <p className="mt-3 text-sm text-muted-foreground">Cobertura a nivel nacional en Ecuador.</p>
         </div>
       </div>
 
