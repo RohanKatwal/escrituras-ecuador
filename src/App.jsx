@@ -36,6 +36,34 @@ const questions = [
   "¿Necesitas regularizar tu terreno ante las entidades correspondientes?",
 ];
 
+const faqs = [
+  {
+    question: "¿Cómo puedo legalizar un terreno sin escrituras en Ecuador?",
+    answer:
+      "El camino adecuado depende de tu caso: el tiempo de posesión, el tipo de predio y la entidad involucrada (MIDUVI, Subsecretaría o municipio). Analizamos tu situación y te orientamos sobre la vía más adecuada, que puede incluir la prescripción adquisitiva de dominio u otro proceso de regularización.",
+  },
+  {
+    question: "¿Qué es la prescripción adquisitiva de dominio?",
+    answer:
+      "Es un proceso legal que permite formalizar la propiedad de un terreno poseído de forma continua durante el tiempo que establece la ley, cuando no existen escrituras previas a tu nombre.",
+  },
+  {
+    question: "¿Qué documentos necesito para regularizar mi terreno?",
+    answer:
+      "Por lo general se requieren documentos que acrediten la posesión, un levantamiento topográfico o plano del predio y certificados de la entidad correspondiente. Revisamos tu caso puntual y te indicamos exactamente qué necesitas.",
+  },
+  {
+    question: "¿Cuánto tiempo toma el proceso de legalización de un terreno?",
+    answer:
+      "El tiempo varía según el tipo de trámite, la entidad involucrada (MIDUVI, Subsecretaría o municipio) y la situación particular del predio. Te damos un estimado una vez evaluamos tu caso en la asesoría inicial.",
+  },
+  {
+    question: "¿En qué ciudades de Ecuador ofrecen este servicio?",
+    answer:
+      "Brindamos asesoría y acompañamiento para la legalización de terrenos a nivel nacional en Ecuador. Escríbenos por WhatsApp para revisar la ubicación de tu terreno.",
+  },
+];
+
 export default function App() {
   return (
     <div className="min-h-screen bg-background">
@@ -185,6 +213,35 @@ export default function App() {
                 alt="Escritura de propiedad con sello notarial junto a un plano topográfico"
                 className="aspect-[4/3] w-full rounded-2xl border border-border object-cover"
               />
+            </div>
+          </div>
+        </section>
+
+        {/* PREGUNTAS FRECUENTES */}
+        <section id="preguntas-frecuentes" className="border-b border-border">
+          <div className="mx-auto max-w-4xl px-5 py-16 sm:px-8 sm:py-20">
+            <p className="eyebrow">Preguntas frecuentes</p>
+            <h2 className="mt-4 max-w-[26ch] text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+              Todo lo que debes saber sobre legalizar tu terreno en Ecuador.
+            </h2>
+
+            <div className="mt-10 divide-y divide-border">
+              {faqs.map(({ question, answer }) => (
+                <details key={question} className="group py-5">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+                    {question}
+                    <span
+                      aria-hidden="true"
+                      className="shrink-0 text-xl font-bold text-accent transition-transform group-open:rotate-45"
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <p className="mt-3 max-w-[64ch] text-[15px] leading-relaxed text-muted-foreground">
+                    {answer}
+                  </p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

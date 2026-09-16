@@ -119,6 +119,14 @@
   animation: cs-pulse-ring 2.6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
 }
 
+/* Hide the native disclosure triangle on <summary> across browsers (FAQ accordion). */
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::marker {
+  content: "";
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
