@@ -1,4 +1,5 @@
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "../lib/contact.js";
+import Logo from "@/assets/cordero-logo.svg"
 
 export function SiteFooter() {
   return (
@@ -7,15 +8,12 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-3">
             <img
-              src="/favicon.png"
+              src={Logo}
               alt="Cordero Services"
-              className="size-9 rounded-md object-cover"
+              className="size-24"
             />
-            <span className="text-[15px] font-semibold tracking-tight text-foreground">
-              Cordero Services SAS
-            </span>
           </div>
-          <p className="mt-4 max-w-[30ch] text-sm leading-relaxed text-muted-foreground">
+          <p className="max-w-[30ch] text-sm leading-relaxed text-muted-foreground">
             Legalización y regularización de terrenos y propiedades en Ecuador.
           </p>
         </div>
