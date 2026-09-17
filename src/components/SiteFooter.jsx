@@ -6,9 +6,11 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
-            <span className="grid size-9 place-items-center rounded-md bg-accent text-sm font-bold text-accent-foreground">
-              CS
-            </span>
+            <img
+              src="/favicon.png"
+              alt="Cordero Services"
+              className="size-9 rounded-md object-cover"
+            />
             <span className="text-[15px] font-semibold tracking-tight text-foreground">
               Cordero Services SAS
             </span>
@@ -34,7 +36,7 @@ export function SiteFooter() {
           >
             Escríbenos por WhatsApp
           </a>
-          <p className="mt-1 text-sm text-muted-foreground">Ecuador</p>
+          <p className="mt-1 text-sm text-muted-foreground">Cuenca, Ecuador</p>
         </div>
 
         <div>

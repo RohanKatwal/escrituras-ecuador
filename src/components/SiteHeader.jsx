@@ -6,15 +6,17 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-8">
         <a href="#inicio" className="flex items-center gap-3">
-          <span className="grid size-9 place-items-center rounded-md bg-accent text-sm font-bold text-accent-foreground">
-            CS
-          </span>
+          <img
+            src="/favicon.png"
+            alt="Cordero Services"
+            className="size-9 rounded-md object-cover"
+          />
           <span className="leading-tight">
             <span className="block text-[15px] font-semibold tracking-tight text-foreground">
               Cordero Services
             </span>
             <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              SAS · Escrituras
+              Escrituras
             </span>
           </span>
         </a>

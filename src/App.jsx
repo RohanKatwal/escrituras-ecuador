@@ -60,7 +60,7 @@ const faqs = [
   {
     question: "¿En qué ciudades de Ecuador ofrecen este servicio?",
     answer:
-      "Brindamos asesoría y acompañamiento para la legalización de terrenos a nivel nacional en Ecuador. Escríbenos por WhatsApp para revisar la ubicación de tu terreno.",
+      "Brindamos asesoría y acompañamiento para la legalización de terrenos a nivel nacional en Ecuador. Escríbenos por WhatsApp para revisar la ubicación de tu terreno. La oficina principal se encuentra en Cuenca.",
   },
 ];
 
@@ -167,7 +167,7 @@ export default function App() {
         <section id="servicios" className="border-b border-border">
           <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
             <h1 className="mt-6 mb-8 text-4xl font-semibold text-foreground text-center">
-              Podemos ayudarte en procesos relacionados con
+              Podemos ayudarte en procesos relacionados con:
             </h1>
             <div className="grid gap-5 sm:grid-cols-2">
               {services.map(({ icon: Icon, title, text }) => (
@@ -204,10 +204,10 @@ export default function App() {
               </p>
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 {[
-                  "Soporte técnico",
-                  "Abogados en oficina",
+                  "Arquitectos y Peritos",
+                  "Abogados",
                   "Documentación",
-                  "Acompañamiento",
+                  "Acompañamiento y asesoría completa",
                 ].map((item) => (
                   <p
                     key={item}
