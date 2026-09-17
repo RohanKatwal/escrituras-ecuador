@@ -1,24 +1,13 @@
 import { Phone } from "lucide-react";
-import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "../lib/contact.js";
+import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "@/lib/contact";
+import Logo from "@/assets/cordero-logo.svg";
 
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-8">
         <a href="#inicio" className="flex items-center gap-3">
-          <img
-            src="/favicon.png"
-            alt="Cordero Services"
-            className="size-9 rounded-md object-cover"
-          />
-          <span className="leading-tight">
-            <span className="block text-[15px] font-semibold tracking-tight text-foreground">
-              Cordero Services
-            </span>
-            <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              Escrituras
-            </span>
-          </span>
+          <img src={Logo} alt="Cordero Services" className="size-22" />
         </a>
 
         <nav
@@ -31,7 +20,10 @@ export function SiteHeader() {
           <a href="#respaldo" className="transition-colors hover:text-accent">
             Respaldo
           </a>
-          <a href="#preguntas-frecuentes" className="transition-colors hover:text-accent">
+          <a
+            href="#preguntas-frecuentes"
+            className="transition-colors hover:text-accent"
+          >
             Preguntas
           </a>
           <a href="#contacto" className="transition-colors hover:text-accent">
